@@ -13,10 +13,14 @@ async function bootstrap() {
 
   app.useGlobalPipes(
     new ValidationPipe({
-    whitelist: true,
-    forbidNonWhitelisted: true,
+      whitelist: true,
+      forbidNonWhitelisted: true,
+      transform: true, //transformar los query parameters al dato del dto
+      transformOptions:{ //consume mas memoria
+        enableImplicitConversion: true,
+      }
     })
-    );
+  );
 
   await app.listen(3000);
 }
