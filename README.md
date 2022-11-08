@@ -68,8 +68,14 @@ yarn start:dev
 http://localhost:3000/api/v1/seed
 ```
 
-
-
 ## Stack Used
 * MongoDB - Mongoose
 * Nestjs
+
+# Notas
+Heroku redeploy sin cambios:
+```
+git commit --allow-empty -m "Tigger Heroku Deploy"
+git push heroku <master|main>
+```
+
