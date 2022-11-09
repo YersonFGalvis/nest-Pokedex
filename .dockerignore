@@ -1,0 +1,7 @@
+ 
+ dist/
+ node_modules/
+ .gitignore
+
+# carpeta oculta de git que se debe ignorar
+ .git/
